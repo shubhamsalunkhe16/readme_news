@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts.css";
+
+@layer base {
+  body {
+    @apply font-Lato text-base; /* Default font size (e.g., 1rem) */
+  }
+
+  @media (min-width: 768px) {
+    body {
+      @apply text-sm; /* Reduce font size for screens wider than 768px */
+    }
+  }
+}
+
+@layer components {
+  .active-route {
+    @apply underline underline-offset-[5px] decoration-[2px] text-orange-600;
+  }
+
+  .heading-xs {
+    @apply text-xs font-bold text-black;
+  }
+
+  .heading-sm {
+    @apply text-xs lg:text-sm font-bold text-black;
+  }
+
+  .heading-md {
+    @apply text-sm lg:text-base font-bold text-black;
+  }
+
+  .heading-lg {
+    @apply text-base lg:text-lg font-bold text-black font-Lato;
+  }
+
+  .heading-xl {
+    @apply text-lg lg:text-xl font-bold text-black;
+  }
+
+  .heading-2xl {
+    @apply text-xl lg:text-2xl font-bold text-black font-Lato;
+  }
+
+  .heading-3xl {
+    @apply text-2xl lg:text-3xl font-bold text-black font-Lato;
+  }
+
+  .para-sm {
+    @apply text-xs lg:text-sm font-normal text-gray-500;
+  }
+
+  .para-md {
+    @apply text-sm lg:text-base font-normal text-gray-500;
+  }
+
+  .para-lg {
+    @apply text-base lg:text-lg font-normal text-gray-500;
+  }
+
+  .para-xl {
+    @apply text-lg lg:text-xl font-normal text-gray-500;
+  }
+
+  .time_ago {
+    @apply text-xs lg:text-sm font-normal text-gray-700;
+  }
+
+  .divider {
+    @apply w-full h-[2px] mx-auto my-4 bg-gray-300 border-0 rounded;
+  }
+
+  .highlight {
+    @apply text-orange-600;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: theme("colors.gray.300");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#progress {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+#progress .indicator {
+  stroke: theme("colors.orange.600");
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: var(--background);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme("colors.orange.600");
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: theme("colors.orange.600");
+  bottom: 100px;
+}
+
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: theme("colors.orange.600");
+  z-index: 2;
+}
