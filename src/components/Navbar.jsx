@@ -15,7 +15,7 @@ const Navbar = () => {
   const navigateToHome = () => navigate(navConstants.HOME);
 
   return (
-    <nav className="flex gap-6 justify-between items-center p-5 pr-16 bg-bg-card text-text-primary fixed top-0 w-screen z-50 shadow-md">
+    <nav className="flex gap-6 justify-between items-center px-7 py-5 bg-bg-card text-text-primary fixed top-0 w-screen z-50 shadow-md">
       <div className="z-50 cursor-pointer">
         <h1
           className="heading-xl highlight flex gap-2 items-center"
@@ -25,7 +25,7 @@ const Navbar = () => {
           ReadMe
         </h1>
       </div>
-      <div className="hidden md:flex justify-between items-center gap-12">
+      <div className="hidden lg:flex justify-between items-center gap-12">
         {navlinks?.map(({ label, path }) => (
           <NavLink
             key={path}
@@ -41,8 +41,9 @@ const Navbar = () => {
         ))}
         <ThemeBtn />
       </div>
-      <div className="flex justify-between items-center gap-6 md:hidden">
-        <div className="lg:hidden flex items-center z-50 text-text-primary">
+      <div className="flex justify-between items-center gap-6 lg:hidden w-fit">
+        <div className="lg:hidden flex gap-5 sm:gap-8 items-center z-50 text-text-primary">
+          <ThemeBtn />
           <button onClick={() => setToggleMenu(!toggleMenu)}>
             {toggleMenu ? (
               <Close className="h-6 fill-primary" />
@@ -53,7 +54,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed z-40 w-full  bg-slate-950 overflow-hidden flex flex-col md:hidden gap-12 top-0 left-0 duration-700 ${
+        className={`fixed z-40 w-full bg-bg-card overflow-hidden flex flex-col lg:hidden gap-12 top-0 left-0 duration-700 ${
           !toggleMenu ? "h-0" : "h-full"
         }`}
       >
@@ -65,7 +66,7 @@ const Navbar = () => {
                 to={path}
                 className={({ isActive }) =>
                   `para-md ${
-                    isActive ? "active-route highlight" : "text-white"
+                    isActive ? "active-route highlight" : "text-text-primary"
                   } relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
                 }
               >
