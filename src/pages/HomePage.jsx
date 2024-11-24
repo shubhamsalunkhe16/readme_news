@@ -46,10 +46,11 @@ const HomePage = () => {
           </section>
           <section>
             <SectionHeader>Fact check</SectionHeader>
-            <div className="flex gap-10">
+            <div className="flex gap-0 flex-col sm:flex-row sm:gap-10">
               <div className="flex-1">
                 <HorizontalNewsList newsList={factCheckLeftNewsList} />
               </div>
+              <hr className="divider sm:hidden" />
               <div className="flex-1">
                 <HorizontalNewsList newsList={factCheckRightNewsList} />
               </div>

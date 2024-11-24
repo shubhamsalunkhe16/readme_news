@@ -95,7 +95,7 @@ body {
 }
 
 #progress .indicator {
-  stroke: var(--primary-color);
+  stroke: var(--primary);
 }
 
 ::-webkit-scrollbar {
@@ -106,7 +106,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: var(--primary);
   -webkit-border-radius: 1ex;
 }
 
@@ -119,7 +119,7 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background: var(--primary-color);
+  background: var(--primary);
   bottom: 100px;
 }
 
@@ -129,6 +129,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   z-index: 2;
 }

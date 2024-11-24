@@ -83,15 +83,15 @@ const CustomSelect = (props) => (
       }),
       option: (provided, { isFocused, isHovered, isSelected }) => ({
         ...provided,
-        backgroundColor: isSelected ? "var(--primary-color)" : "transparent",
+        backgroundColor: isSelected ? "var(--primary)" : "transparent",
         color: "#000",
         "&:hover": {
           backgroundColor:
-            isFocused || isHovered ? "var(--primary-color)" : "transparent",
+            isFocused || isHovered ? "var(--primary)" : "transparent",
         },
         "&:active": {
           backgroundColor:
-            isFocused || isHovered ? "var(--primary-color)" : "transparent",
+            isFocused || isHovered ? "var(--primary)" : "transparent",
         },
       }),
     }}

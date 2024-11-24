@@ -15,7 +15,7 @@ const Navbar = () => {
   const navigateToHome = () => navigate(navConstants.HOME);
 
   return (
-    <nav className="flex gap-6 justify-between items-center p-5 pr-16 bg-bg-card text-text-primary fixed top-0 w-screen z-50">
+    <nav className="flex gap-6 justify-between items-center p-5 pr-16 bg-bg-card text-text-primary fixed top-0 w-screen z-50 shadow-md">
       <div className="z-50 cursor-pointer">
         <h1
           className="heading-xl highlight flex gap-2 items-center"

@@ -8,7 +8,7 @@ const FooterLinks = () => {
   return (
     <div>
       <h4 className="heading-lg text-primary mb-2">Links</h4>
-      <div className="flex-1 flex items-center gap-3 flex-wrap  text-text-primary">
+      <div className="flex-1 flex items-center gap-x-1 gap-y-3 flex-wrap text-text-primary">
         {navlinks?.map(({ label, path }) => (
           <span className="w-[calc(50%-12px)]" key={path}>
             <NavLink

@@ -10,7 +10,7 @@ module.exports = {
         "bg-card": "var(--bg-card)",
         "text-primary": "var(--text-primary)",
         "text-secondary": "var(--text-secondary)",
-        primary: "var(--primary-color)",
+        primary: "var(--primary)",
       },
       boxShadow: {
         md: "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
@@ -20,5 +20,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [],
 };
