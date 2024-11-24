@@ -6,7 +6,7 @@ const NewsCategoryCard = ({ newsCategory }) => {
   const navigate = useNavigate();
 
   const redirectToNewsCategory = () => {
-    navigate(`${navConstants.CATEGORIES}/${newsCategory?.value}`);
+    navigate(`${navConstants.CATEGORY}/${newsCategory?.value}`);
   };
 
   return (

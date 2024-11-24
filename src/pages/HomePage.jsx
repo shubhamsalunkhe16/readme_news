@@ -50,7 +50,7 @@ const HomePage = () => {
               <div className="flex-1">
                 <HorizontalNewsList newsList={factCheckLeftNewsList} />
               </div>
-              <hr className="divider sm:hidden" />
+              <hr className="divider sm:hidden mt-0" />
               <div className="flex-1">
                 <HorizontalNewsList newsList={factCheckRightNewsList} />
               </div>
