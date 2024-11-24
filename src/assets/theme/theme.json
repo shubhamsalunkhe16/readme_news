@@ -1,0 +1,16 @@
+{
+  "light": {
+    "--bg-primary": "#c3c3c3",
+    "--bg-card": "#F0EBE3",
+    "--text-primary": "#000000",
+    "--text-secondary": "#6b7280",
+    "--primary-color": "#2467d9"
+  },
+  "dark": {
+    "--bg-primary": "#000000",
+    "--bg-card": "#0B192C",
+    "--text-primary": "#ffffff",
+    "--text-secondary": "#6b7280",
+    "--primary-color": "#FF6500"
+  }
+}

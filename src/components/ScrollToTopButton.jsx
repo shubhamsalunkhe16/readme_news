@@ -37,7 +37,7 @@ const ScrollToTopButton = () => {
     <Arrow
       className={`${
         visible ? "opacity-100" : "opacity-0"
-      } transition-opacity ease-in-out duration-500 fixed bottom-2 right-2 w-8 h-8 p-[6px] rotate-180 cursor-pointer rounded-full bg-orange-600 stroke-black`}
+      } transition-opacity ease-in-out duration-500 fixed bottom-2 right-2 w-8 h-8 p-[6px] rotate-180 cursor-pointer rounded-full bg-primary stroke-black`}
       onClick={scrollToTop}
     />
   );

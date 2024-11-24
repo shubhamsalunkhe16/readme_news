@@ -4,17 +4,17 @@ export const NewsSkeleton = () => (
   <>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
       {new Array(4)?.fill(0)?.map(() => (
-        <div className="w-full h-48 bg-gray-200 rounded-lg animate-pulse"></div>
+        <div className="w-full h-48 bg-text-secondary rounded-lg animate-pulse"></div>
       ))}
     </div>
     <div className="grid grid-cols-2 gap-4 mb-4">
       {new Array(2)?.fill(0)?.map(() => (
-        <div className="w-full h-48 bg-gray-200 rounded-lg animate-pulse"></div>
+        <div className="w-full h-48 bg-text-secondary rounded-lg animate-pulse"></div>
       ))}
     </div>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
       {new Array(4)?.fill(0)?.map(() => (
-        <div className="w-full h-48 bg-gray-200 rounded-lg animate-pulse"></div>
+        <div className="w-full h-48 bg-text-secondary rounded-lg animate-pulse"></div>
       ))}
     </div>
   </>

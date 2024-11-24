@@ -4,19 +4,19 @@ import SocialItem from "./SocialItem";
 const SocialCard = () => {
   const socialMeta = [
     {
-      icon: "github",
+      icon: "Github",
       link: "https://github.com/shubhamsalunkhe16",
     },
     {
-      icon: "whatsapp",
+      icon: "Whatsapp",
       link: "https://wa.me/+919004409190",
     },
     {
-      icon: "instagram",
+      icon: "Instagram",
       link: "https://github.com/shubhamsalunkhe16",
     },
     {
-      icon: "linkedin",
+      icon: "Linkedin",
       link: "https://www.linkedin.com/in/shubham-b-salunkhe",
     },
   ];

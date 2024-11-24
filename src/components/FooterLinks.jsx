@@ -7,16 +7,16 @@ const navlinks = navConstants.NAVLINKS;
 const FooterLinks = () => {
   return (
     <div>
-      <h4 className="heading-lg text-white mb-2">Links</h4>
-      <div className="flex-1 flex items-center gap-3 flex-wrap bg-slate-950 text-white">
+      <h4 className="heading-lg text-primary mb-2">Links</h4>
+      <div className="flex-1 flex items-center gap-3 flex-wrap  text-text-primary">
         {navlinks?.map(({ label, path }) => (
           <span className="w-[calc(50%-12px)]" key={path}>
             <NavLink
               to={path}
               className={({ isActive }) =>
                 `para-sm ${
-                  isActive ? "active-route highlight" : "text-white"
-                } relative after:bg-orange-600 after:absolute after:h-[2px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
+                  isActive ? "active-route highlight" : "text-text-primary"
+                } relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
               }
             >
               {label}

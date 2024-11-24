@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { ReactComponent as MenuBar } from "../assets/icons/menu-bar.svg";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as ReadMeLogo } from "../assets/icons/readme.svg";
+import ThemeBtn from "./ThemeBtn";
 
 const navlinks = navConstants.NAVLINKS;
 
@@ -14,13 +15,13 @@ const Navbar = () => {
   const navigateToHome = () => navigate(navConstants.HOME);
 
   return (
-    <nav className="flex justify-between items-center p-5 pr-16 bg-slate-950 text-white fixed top-0 w-screen z-50">
+    <nav className="flex gap-6 justify-between items-center p-5 pr-16 bg-bg-card text-text-primary fixed top-0 w-screen z-50">
       <div className="z-50 cursor-pointer">
         <h1
           className="heading-xl highlight flex gap-2 items-center"
           onClick={navigateToHome}
         >
-          <ReadMeLogo className="fill-orange-600" />
+          <ReadMeLogo className="fill-primary" />
           ReadMe
         </h1>
       </div>
@@ -31,21 +32,22 @@ const Navbar = () => {
             to={path}
             className={({ isActive }) =>
               `para-md ${
-                isActive ? "active-route highlight" : "text-white"
-              } relative after:bg-orange-600 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
+                isActive ? "active-route highlight" : "text-text-primary"
+              } relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
             }
           >
             {label}
           </NavLink>
         ))}
+        <ThemeBtn />
       </div>
       <div className="flex justify-between items-center gap-6 md:hidden">
-        <div className="lg:hidden flex items-center z-50 text-white">
+        <div className="lg:hidden flex items-center z-50 text-text-primary">
           <button onClick={() => setToggleMenu(!toggleMenu)}>
             {toggleMenu ? (
-              <Close className="h-6 fill-white" />
+              <Close className="h-6 fill-primary" />
             ) : (
-              <MenuBar className="h-6 fill-white" />
+              <MenuBar className="h-6 fill-primary" />
             )}
           </button>
         </div>
@@ -64,7 +66,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `para-md ${
                     isActive ? "active-route highlight" : "text-white"
-                  } relative after:bg-orange-600 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
+                  } relative after:bg-primary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer`
                 }
               >
                 {label}

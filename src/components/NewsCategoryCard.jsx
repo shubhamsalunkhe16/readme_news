@@ -11,7 +11,7 @@ const NewsCategoryCard = ({ newsCategory }) => {
 
   return (
     <h4
-      className="heading-lg grid place-items-center rounded-lg w-full bg-orange-600 flex-1 px-0 py-10 hover:underline underline-offset-4 decoration-2 cursor-pointer text-center"
+      className="heading-lg grid place-items-center rounded-lg w-full bg-primary flex-1 px-0 py-10 hover:underline underline-offset-4 decoration-2 cursor-pointer text-center"
       onClick={redirectToNewsCategory}
     >
       {newsCategory?.label}

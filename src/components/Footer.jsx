@@ -11,16 +11,16 @@ const Footer = () => {
   const navigateToHome = () => navigate(navConstants.HOME);
 
   return (
-    <footer className="flex flex-col md:flex-row gap-5 md:gap-20 flex-wrap justify-around  p-5 bg-slate-950 text-white">
+    <footer className="flex flex-col md:flex-row gap-5 md:gap-20 flex-wrap justify-around  p-5 bg-bg-card text-text-primary">
       <div className="flex-1">
         <h1
           className="heading-xl highlight flex gap-2 items-center mb-2 cursor-pointer"
           onClick={navigateToHome}
         >
-          <ReadMeLogo className="fill-orange-600" />
+          <ReadMeLogo className="fill-primary" />
           ReadMe
         </h1>
-        <p className="para-sm text-white">Stay Informed, Stay Ahead.</p>
+        <p className="para-sm text-text-primary">Stay Informed, Stay Ahead.</p>
       </div>
       <hr className="divider md:hidden" />
       <div className="flex-1">
