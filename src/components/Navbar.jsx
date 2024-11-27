@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import navConstants from "../constants/navStrings";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ReactComponent as MenuBar } from "../assets/icons/menu-bar.svg";
 import { ReactComponent as Close } from "../assets/icons/close.svg";
 import { ReactComponent as ReadMeLogo } from "../assets/icons/readme.svg";
@@ -11,8 +11,12 @@ const navlinks = navConstants.NAVLINKS;
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const navigateToHome = () => navigate(navConstants.HOME);
+  useEffect(() => {
+    setToggleMenu(false);
+  }, [location?.pathname]);
 
   return (
     <nav className="flex gap-6 justify-between items-center px-7 py-5 bg-bg-card text-text-primary fixed top-0 w-screen z-50 shadow-md">
